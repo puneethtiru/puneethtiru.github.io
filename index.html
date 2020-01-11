@@ -7,13 +7,23 @@
     <title>Puneeth Tirunagari</title>
     <meta name="description" content="Personal Portfolio" />
     <meta name="author" content="Puneeth" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
 
@@ -23,43 +33,47 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/main.css" />
   </head>
 
   <body>
     <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-4 text-center cus-div-outer">
-          <div class="cus-div-top">
-            <label class="cus-hl1">Will be back soon</label>
-            <label class="cus-hl2">This website is being upgraded!</label>
-            <div class="row cus-counter-outer">
-              <div class="col cus-counter">
-                <span id="cus-days" class="cus-counter-val"></span>
-                <span class="cus-counter-label">Days</span>
-              </div>
-              <div class="col cus-counter">
-                <span id="cus-hours" class="cus-counter-val"></span>
-                <span class="cus-counter-label">Hours</span>
-              </div>
-              <div class="col cus-counter">
-                <span id="cus-minutes" class="cus-counter-val"></span>
-                <span class="cus-counter-label">Minutes</span>
-              </div>
-              <div class="col cus-counter">
-                <span id="cus-seconds" class="cus-counter-val"></span>
-                <span class="cus-counter-label">Seconds</span>
-              </div>
-            </div>
-          </div>
-          <div class="cus-div-bottom">
-            <span>Designed by: Puneeth Tirunagari</span>
-          </div>
+      <div class="row" id="topNav">
+        <div class="col-sm-4" id="topNavLeft">
+          <label class="label-logo">Puneeth Tirunagari</label>
+        </div>
+        <div class="col-sm-8" id="topNavRight">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <span
+                class="nav-link active"
+                onclick="navClicked(0);"
+                id="navItem-0"
+                >Home</span
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-link" onclick="navClicked(1);" id="navItem-1"
+                >Resume</span
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-link" onclick="navClicked(2);" id="navItem-2"
+                >Portfolio</span
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-link" onclick="navClicked(3);" id="navItem-3"
+                >Contact</span
+              >
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="row justify-content-center"></div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="assets/index.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
