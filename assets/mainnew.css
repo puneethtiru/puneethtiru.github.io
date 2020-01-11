@@ -1,0 +1,82 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+.container-fluid {
+  /* background: linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff); */
+  background: linear-gradient(45deg, #ac32e4, #333399);
+  min-height: 100vh;
+  /* margin: 10vh 0vh 10vh 0vh; */
+}
+
+#topNav {
+  padding: 10px;
+}
+
+.label-logo {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  height: 100%;
+  padding: 0px 0px 0px 20px;
+  font-weight: 600;
+  vertical-align: middle;
+  line-height: 40px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+.nav-item > .active {
+  /* color: rgb(95, 255, 228); */
+  /* border-bottom: 2px solid rgb(95, 255, 228); */
+  color: #ff006a;
+  border-bottom: 2px solid #ff006a;
+  padding-bottom: 4px !important;
+  font-weight: bold;
+}
+.nav-item > .active:hover {
+  /* color: rgb(95, 255, 228) !important; */
+  color: #ff006a !important;
+}
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #bbb;
+}
+
+.cus-hl1 {
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+  /* text-transform: uppercase; */
+  padding-top: 50px;
+}
+.cus-hl2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 29px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
