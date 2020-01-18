@@ -1,0 +1,86 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+.cus-div-outer {
+  height: 100vh;
+}
+
+.cus-div-top {
+  padding-top: 10vh;
+  height: 95%;
+}
+
+.cus-div-bottom {
+  color: #fff;
+}
+
+.container-fluid {
+  /* background: linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff); */
+  background: linear-gradient(45deg, #ff00cc, #333399);
+  height: 100vh;
+  /* margin: 10vh 0vh 10vh 0vh; */
+}
+
+.cus-hl1 {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.cus-hl2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 29px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.cus-counter-outer {
+  margin-top: 5vh;
+}
+.cus-counter {
+  height: 90px;
+  width: 90px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.cus-counter-val {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #555;
+  padding-bottom: 5px;
+}
+
+.cus-counter-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cus-div-top {
+    padding-top: 25vh;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

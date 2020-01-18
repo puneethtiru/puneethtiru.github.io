@@ -1,29 +1,50 @@
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 17, 2020 00:00:00").getTime();
+var loadpics = function() {
+  var divText = "";
+  var imgSrcPrefix = "../assets/img/test/pic (";
+  var imgNum = 1;
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-  // Get today's date and time
-  var now = new Date().getTime();
+  for (x = 1; x < 37; x++) {
+    imgNum = x;
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+    var prevText = "";
+    var nextText = "";
+    var imgText = "../assets/img/test/pic (" + imgNum.toString() + ").jpg";
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if (x > 1) {
+      prevText =
+        "<a class=&quot;cssbox_prev&quot; href=&quot;#image" +
+        (imgNum - 1) +
+        "&quot;>&lt;</a>";
+    }
+    if (x < 36) {
+      nextText =
+        "<a class=&quot;cssbox_next&quot; href=&quot;#image" +
+        (imgNum + 1) +
+        "&quot;>&gt;</a>";
+    }
 
-  // Display the result in the element with id="demo"
-  document.getElementById("cus-days").innerHTML = days;
-  document.getElementById("cus-hours").innerHTML = hours;
-  document.getElementById("cus-minutes").innerHTML = minutes;
-  document.getElementById("cus-seconds").innerHTML = seconds;
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    divText +=
+      "<div class=&quot;col-2&quot;>" +
+      "<div class=&quot;cssbox&quot;>" +
+      "<a id=&quot;image" +
+      imgNum +
+      "&quot; href=&quot;#image" +
+      imgNum +
+      "&quot;>" +
+      "<img class=&quot;cssbox_thumb&quot; src=&quot;" +
+      imgText +
+      "&quot;/>" +
+      "<span class=&quot;cssbox_full&quot;><img src=&quot;" +
+      imgText +
+      "&quot;/></span>" +
+      "</a>" +
+      "<a class=&quot;cssbox_close&quot; href=&quot;#void&quot;></a>" +
+      prevText +
+      nextText +
+      "</div>" +
+      "</div>";
   }
-}, 1000);
+  console.log(divText);
+
+  document.getElementById("cus-images-outer-div").innerHTML = divText;
+};
